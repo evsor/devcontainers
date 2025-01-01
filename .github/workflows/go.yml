@@ -23,6 +23,7 @@ jobs:
       - name: Build and push GO image
         uses: docker/build-push-action@v6
         with:
+          context: "{{defaultContext}}:go"
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/${{ vars.REGISTRY }}:${{  github.ref_name }}
 
