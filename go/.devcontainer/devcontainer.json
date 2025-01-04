@@ -1,0 +1,17 @@
+{
+	"name": "Go",
+	"image": "evsoroka/devcontainers:go-1.1.0",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.Go",
+				"fabiospampinato.vscode-diff",
+				"streetsidesoftware.code-spell-checker",
+				"eamodio.gitlens",
+				"mohsen1.prettify-json",
+				"shardulm94.trailing-spaces",
+				"redhat.vscode-yaml"
+			]
+		}
+	}
+}
