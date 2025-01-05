@@ -1,6 +1,6 @@
 {
 	"name": "Go",
-	"image": "evsoroka/devcontainers:go-1.1.0",
+	"image": "evsoroka/devcontainers:go-1.1.2",
 	"customizations": {
 		"vscode": {
 			"extensions": [
