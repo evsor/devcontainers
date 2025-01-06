@@ -13,6 +13,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
     apt-get clean -y && \
     rm -r /var/cache/* /var/lib/apt/lists/*
 
+# Create the user
+ARG USERNAME=user
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
+RUN groupadd --gid $USER_GID $USERNAME && \
+    useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+
+USER user
+
 ENV GOPATH=/go
 
 ENV PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
