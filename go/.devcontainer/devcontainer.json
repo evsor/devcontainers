@@ -13,7 +13,8 @@
 				"eamodio.gitlens",
 				"mohsen1.prettify-json",
 				"shardulm94.trailing-spaces",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
